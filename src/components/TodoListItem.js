@@ -1,8 +1,13 @@
 import React from 'react';
 
-const TodoListItem = () => {
+const TodoListItem = ({ label, important = false }) => {
+
+    const style = {
+        color: important ? 'tomato' : 'inherit'
+    };
+
     return (
-        <span>Drink coffee</span>
+        <span style={style}>{label}</span>
     );
 };
 
