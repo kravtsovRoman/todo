@@ -43,9 +43,7 @@ export default class App extends React.Component {
             id: this.maxId++
         }
 
-
         this.setState(({ todoData }) => {
-
             const newTodo = [
                 ...todoData,
                 newItem
